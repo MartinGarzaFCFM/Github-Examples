@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo Tiempo
-        run: echo "Ahora mismo el tiempo ${date}"
+        run: echo "Ahora mismo el tiempo $(date)"
