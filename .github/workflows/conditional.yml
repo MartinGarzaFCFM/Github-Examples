@@ -1,8 +1,13 @@
 name: conditional-workflow
 on: [push]
 jobs:
+  print-repo-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print the repo name
+        run: echo $"{{github.repository}}"
   hello-world:
-    if: github.repository == 'octo-org/octo-repo-prod'
+    if: github.repository == 'MartinGarzaFCFM/Github-Examples'
     runs-on: ubuntu-latest
     steps:
       - name: "Hello World"
