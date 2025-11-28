@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Accionar Hola Mundo
         id: hola
-        uses: MartinGarzaFCFM/barsoom@v1.0.0
+        uses: MartinGarzaFCFM/barsoom@v0.0.4
         with:
           nombre: 'Josuke'
       - name: Saca el saludo
