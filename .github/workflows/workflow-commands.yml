@@ -20,4 +20,4 @@ jobs:
           echo $MY_VAL
       - name: "maskIt!"
         run: |
-          echo "::add_mask:: $GITHUB_ENV.MY_VAL"
+          echo "::add_mask:: ${{ GITHUB_ENV.MY_VAL }}"
