@@ -11,6 +11,6 @@ jobs:
         id: hola
         uses: MartinGarzaFCFM/barsoom@v0.0.3
         with:
-          nombre: "Josuke"
+          nombre: 'Josuke'
       - name: Saca el saludo
-        run: echo "El saludo que nos llego es: ${{ steps.hola.outputs.saludo }}"
+        run: echo "El saludo que nos llego es ${{ steps.hola.outputs.saludo }}"
