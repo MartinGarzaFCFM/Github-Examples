@@ -2,7 +2,7 @@ name: "Webhook Event Example"
 on:
   repository_dispatch:
     types:
-      webhook
+      CheckThisOut
 
 jobs:
   respond-to-dispatch:
