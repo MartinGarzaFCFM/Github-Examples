@@ -7,12 +7,14 @@ jobs:
       - name: print the repo name
         run: echo ${{ github.repository }}
   hello-world:
+    needs: print-repo-name
     if: github.repository == 'MartinGarzaFCFM/Github-Examples'
     runs-on: ubuntu-latest
     steps:
       - name: "Hello World"
         run:  echo "Hello World!"
   goodbye-moon:
+    needs: [print-repo-name, hello-world]
     runs-on: ubuntu-latest
     steps:
       - name: "Goodbye Moon"
