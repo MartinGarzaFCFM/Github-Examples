@@ -1,0 +1,16 @@
+name: MiHolaMundo
+
+on: [push]
+
+jobs:
+  HolaMundoJob:
+    runs-on: ubuntu-latest
+    name: Mi propio Job en Custom
+    steps:
+      - name: Accionar Hola Mundo
+        id: hola
+        uses: MartinGarzaFCFM/barsoom@v0.0.3
+        with:
+          nombre: "Josuke"
+      - name: Saca el saludo
+        run: echo "El saludo que nos llego es: ${{ steps.hola.outputs.saludo }}"
