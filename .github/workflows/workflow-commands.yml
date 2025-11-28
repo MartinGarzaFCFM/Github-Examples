@@ -17,4 +17,4 @@ jobs:
           echo "MY_VAL=hello" >> $GITHUB_ENV
       - name: "step 2"
         run: |
-          echo $MYVAL
+          echo ${{ MYVAL }}
